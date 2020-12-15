@@ -2,5 +2,5 @@
 Homebrew tap for the Adept programming language
 
 ```
-brew install AdeptLanguage/tap/adept
+brew install AdeptLanguage/tap/adept --HEAD
 ```
