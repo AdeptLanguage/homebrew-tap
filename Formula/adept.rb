@@ -1,13 +1,13 @@
 class Adept < Formula
   desc "Blazing fast language for general purpose programming"
-  homepage "https://github.com/IsaacShelton/Adept"
+  homepage "https://github.com/AdeptLanguage/Adept"
   license "GPL-3.0"
 
   head do
-    url "https://github.com/IsaacShelton/Adept.git"
+    url "https://github.com/AdeptLanguage/Adept.git"
 
     resource "import" do
-      url "https://github.com/IsaacShelton/AdeptImport.git"
+      url "https://github.com/AdeptLanguage/AdeptImport.git"
     end
   end
 
