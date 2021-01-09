@@ -1,7 +1,17 @@
 class Adept < Formula
   desc "Blazing fast language for general purpose programming"
   homepage "https://github.com/AdeptLanguage/Adept"
-  license "GPL-3.0"
+  license "GPL-3.0-only"
+
+  stable do
+    url "https://github.com/AdeptLanguage/Adept/archive/v2.4.tar.gz"
+    sha256 "029c83144edd30968acf32291fa334a94c09d1b2676127db00b46e4e55567506"
+
+    resource "import" do
+      url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.4.tar.gz"
+      sha256 "b2d2d92e7e2ffd7b02b25b9f822f57db161c54ad547f9ac8c1118a3de35c5846"
+    end
+  end
 
   head do
     url "https://github.com/AdeptLanguage/Adept.git"
@@ -17,8 +27,9 @@ class Adept < Formula
   def install
     system "cmake", ".", *std_cmake_args
     system "make"
-    bin.install "adept"
-    (bin/"import").install resource("import")
+    libexec.install "adept"
+    (libexec/"import").install resource("import")
+    bin.install_symlink libexec/"adept"
   end
 
   test do
