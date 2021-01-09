@@ -48,3 +48,4 @@ jobs:
         uses: Homebrew/actions/git-try-push@master
         with:
           token: ${{github.token}}
+          branch: main
