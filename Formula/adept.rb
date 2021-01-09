@@ -34,7 +34,7 @@ class Adept < Formula
 
   test do
     (testpath/"test.adept").write <<~EOS
-      import '2.3/basics.adept'
+      import basics
       func main {
         print("Hello World!")
       }
