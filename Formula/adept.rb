@@ -15,6 +15,11 @@ class Adept < Formula
       url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.4.tar.gz"
       sha256 "b2d2d92e7e2ffd7b02b25b9f822f57db161c54ad547f9ac8c1118a3de35c5846"
     end
+    
+    # (Not needed yet, since Adept 2.4 stable doesn't require 'adept.config' file)
+    #resource "adept.config" do
+    #  url "https://github.com/AdeptLanguage/AdeptImport.git"
+    #end
   end
 
   bottle do
@@ -30,6 +35,10 @@ class Adept < Formula
     resource "import" do
       url "https://github.com/AdeptLanguage/AdeptImport.git"
     end
+    
+    resource "adept.config" do
+      url "https://github.com/AdeptLanguage/AdeptImport.git"
+    end
   end
 
   depends_on "cmake" => :build
@@ -41,6 +50,7 @@ class Adept < Formula
     system "make"
     libexec.install "adept"
     (libexec/"import").install resource("import")
+    (libexec).install resource("adept.config")
     bin.install_symlink libexec/"adept"
   end
 
