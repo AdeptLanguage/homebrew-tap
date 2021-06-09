@@ -16,10 +16,10 @@ class Adept < Formula
       sha256 "b2d2d92e7e2ffd7b02b25b9f822f57db161c54ad547f9ac8c1118a3de35c5846"
     end
     
-    # (Not needed yet, since Adept 2.4 stable doesn't require 'adept.config' file)
-    #resource "adept.config" do
-    #  url "https://github.com/AdeptLanguage/Config.git"
-    #end
+    # Lazily grab latest configuration
+    resource "adept.config" do
+      url "https://github.com/AdeptLanguage/Config.git"
+    end
   end
 
   bottle do
