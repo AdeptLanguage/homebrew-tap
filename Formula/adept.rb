@@ -31,6 +31,7 @@ class Adept < Formula
 
   depends_on "cmake" => :build
   depends_on "llvm@9"
+  depends_on "curl"
 
   def install
     system "cmake", ".", *std_cmake_args
