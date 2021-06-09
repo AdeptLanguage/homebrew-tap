@@ -18,7 +18,7 @@ class Adept < Formula
     
     # (Not needed yet, since Adept 2.4 stable doesn't require 'adept.config' file)
     #resource "adept.config" do
-    #  url "https://github.com/AdeptLanguage/AdeptImport.git"
+    #  url "https://github.com/AdeptLanguage/Config.git"
     #end
   end
 
@@ -37,7 +37,7 @@ class Adept < Formula
     end
     
     resource "adept.config" do
-      url "https://github.com/AdeptLanguage/AdeptImport.git"
+      url "https://github.com/AdeptLanguage/Config.git"
     end
   end
 
