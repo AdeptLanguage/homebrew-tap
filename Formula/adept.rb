@@ -15,7 +15,7 @@ class Adept < Formula
       url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.4.tar.gz"
       sha256 "b2d2d92e7e2ffd7b02b25b9f822f57db161c54ad547f9ac8c1118a3de35c5846"
     end
-    
+
     # Lazily grab latest configuration
     resource "adept.config" do
       url "https://github.com/AdeptLanguage/Config.git"
@@ -35,7 +35,7 @@ class Adept < Formula
     resource "import" do
       url "https://github.com/AdeptLanguage/AdeptImport.git"
     end
-    
+
     resource "adept.config" do
       url "https://github.com/AdeptLanguage/Config.git"
     end
