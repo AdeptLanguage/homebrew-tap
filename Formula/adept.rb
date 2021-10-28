@@ -10,6 +10,7 @@ class Adept < Formula
   stable do
     url "https://github.com/AdeptLanguage/Adept/archive/v2.4.tar.gz"
     sha256 "029c83144edd30968acf32291fa334a94c09d1b2676127db00b46e4e55567506"
+    depends_on "llvm@9"
 
     resource "import" do
       url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.4.tar.gz"
@@ -27,10 +28,12 @@ class Adept < Formula
     sha256 cellar: :any, big_sur:      "af744f4baf1064de1d12c6b7ffa40d1a008f597fd273e2d93758837ff18ae780"
     sha256 cellar: :any, catalina:     "ed73a8ba04c26c174e4286621ed1df1daaf18ad8941c8da98e6210b79faa4733"
     sha256 cellar: :any, x86_64_linux: "3c58317eb2a2b431a1ed827f4260560400ee5678b2799dfe268bac669c6e29f4"
+    depends_on "llvm@9"
   end
 
   head do
     url "https://github.com/AdeptLanguage/Adept.git"
+    depends_on "llvm@12"
 
     resource "import" do
       url "https://github.com/AdeptLanguage/AdeptImport.git"
@@ -43,7 +46,6 @@ class Adept < Formula
 
   depends_on "cmake" => :build
   depends_on "curl"
-  depends_on "llvm@9"
 
   def install
     system "cmake", ".", *std_cmake_args
