@@ -9,12 +9,12 @@ class Adept < Formula
 
   stable do
     url "https://github.com/AdeptLanguage/Adept/archive/v2.5.tar.gz"
-    sha256 "029c83144edd30968acf32291fa334a94c09d1b2676127db00b46e4e55567506"
+    sha256 "2844d88734bc1aa5e055232428b0a505658edc1235809601f3de6a295d0294c9"
     depends_on "llvm@12"
 
     resource "import" do
       url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.5.tar.gz"
-      sha256 "b2d2d92e7e2ffd7b02b25b9f822f57db161c54ad547f9ac8c1118a3de35c5846"
+      sha256 "17fdb36787c7eb616499840f4919acaef0ed006836159de8843ae5e68d8ea2b0"
     end
 
     # Lazily grab latest configuration
