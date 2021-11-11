@@ -8,12 +8,12 @@ class Adept < Formula
   license "GPL-3.0-only"
 
   stable do
-    url "https://github.com/AdeptLanguage/Adept/archive/v2.4.tar.gz"
+    url "https://github.com/AdeptLanguage/Adept/archive/v2.5.tar.gz"
     sha256 "029c83144edd30968acf32291fa334a94c09d1b2676127db00b46e4e55567506"
-    depends_on "llvm@9"
+    depends_on "llvm@12"
 
     resource "import" do
-      url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.4.tar.gz"
+      url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.5.tar.gz"
       sha256 "b2d2d92e7e2ffd7b02b25b9f822f57db161c54ad547f9ac8c1118a3de35c5846"
     end
 
@@ -23,12 +23,12 @@ class Adept < Formula
     end
   end
 
-  bottle do
-    root_url "https://github.com/AdeptLanguage/homebrew-tap/releases/download/adept-2.4"
-    sha256 cellar: :any, big_sur:      "af744f4baf1064de1d12c6b7ffa40d1a008f597fd273e2d93758837ff18ae780"
-    sha256 cellar: :any, catalina:     "ed73a8ba04c26c174e4286621ed1df1daaf18ad8941c8da98e6210b79faa4733"
-    sha256 cellar: :any, x86_64_linux: "3c58317eb2a2b431a1ed827f4260560400ee5678b2799dfe268bac669c6e29f4"
-  end
+  # bottle do
+    # root_url "https://github.com/AdeptLanguage/homebrew-tap/releases/download/adept-2.4"
+    # sha256 cellar: :any, big_sur:      "af744f4baf1064de1d12c6b7ffa40d1a008f597fd273e2d93758837ff18ae780"
+    # sha256 cellar: :any, catalina:     "ed73a8ba04c26c174e4286621ed1df1daaf18ad8941c8da98e6210b79faa4733"
+    # sha256 cellar: :any, x86_64_linux: "3c58317eb2a2b431a1ed827f4260560400ee5678b2799dfe268bac669c6e29f4"
+  # end
 
   head do
     url "https://github.com/AdeptLanguage/Adept.git"
