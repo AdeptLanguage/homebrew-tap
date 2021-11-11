@@ -9,7 +9,7 @@ class Adept < Formula
 
   stable do
     url "https://github.com/AdeptLanguage/Adept/archive/v2.5.tar.gz"
-    sha256 "2844d88734bc1aa5e055232428b0a505658edc1235809601f3de6a295d0294c9"
+    sha256 "fbeb1c32ed07277aef10c05de15a46cc4d31d616cfb389b45d40c791368057f8"
     depends_on "llvm@13"
 
     resource "import" do
