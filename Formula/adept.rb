@@ -23,6 +23,7 @@ class Adept < Formula
     end
   end
 
+  # TODO: Fill in
   # bottle do
     # root_url "https://github.com/AdeptLanguage/homebrew-tap/releases/download/adept-2.4"
     # sha256 cellar: :any, big_sur:      "af744f4baf1064de1d12c6b7ffa40d1a008f597fd273e2d93758837ff18ae780"
