@@ -10,7 +10,7 @@ class Adept < Formula
   stable do
     url "https://github.com/AdeptLanguage/Adept/archive/v2.5.tar.gz"
     sha256 "2844d88734bc1aa5e055232428b0a505658edc1235809601f3de6a295d0294c9"
-    depends_on "llvm@12"
+    depends_on "llvm@13"
 
     resource "import" do
       url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.5.tar.gz"
@@ -33,7 +33,7 @@ class Adept < Formula
 
   head do
     url "https://github.com/AdeptLanguage/Adept.git"
-    depends_on "llvm@12"
+    depends_on "llvm@13"
 
     resource "import" do
       url "https://github.com/AdeptLanguage/AdeptImport.git"
