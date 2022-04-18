@@ -8,13 +8,13 @@ class Adept < Formula
   license "GPL-3.0-only"
 
   stable do
-    url "https://github.com/AdeptLanguage/Adept/archive/v2.5.tar.gz"
-    sha256 "fbeb1c32ed07277aef10c05de15a46cc4d31d616cfb389b45d40c791368057f8"
+    url "https://github.com/AdeptLanguage/Adept/archive/v2.6.tar.gz"
+    sha256 "e1ff2e9efe20b07a2dc269742fea672b277675d127e578c8e5c107b4c12886ca"
     depends_on "llvm@13"
 
     resource "import" do
-      url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.5.tar.gz"
-      sha256 "17fdb36787c7eb616499840f4919acaef0ed006836159de8843ae5e68d8ea2b0"
+      url "https://github.com/AdeptLanguage/AdeptImport/archive/v2.6.tar.gz"
+      sha256 "a7a6e16d55ea78e4962bf77fa876df73275f3baf8b9636198e48bcec7bc2edc2"
     end
 
     # Lazily grab latest configuration
