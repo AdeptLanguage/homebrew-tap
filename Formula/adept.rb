@@ -51,7 +51,7 @@ class Adept < Formula
     system "make"
     libexec.install "adept"
     (libexec/"import").install resource("import")
-    (libexec).install resource("adept.config")
+    libexec.install resource("adept.config")
     bin.install_symlink libexec/"adept"
   end
 
