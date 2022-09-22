@@ -25,9 +25,9 @@ class Adept < Formula
 
   bottle do
     root_url "https://github.com/AdeptLanguage/homebrew-tap/releases/download/adept-2.7"
-    sha256 cellar: :any,                 big_sur:      "4dbfcceb6c7cef0b3807716f6714ccbd90fa30c76385cec8c60355e18645dd61"
-    sha256 cellar: :any,                 catalina:     "8b7722dc40d4d4326798591b38d76c45a202a2e27c3eb021462f56d9990aa297"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "c4f63829296592b218f9862ce8c00eea34308bf241adb99064c9b2552c7c251a"
+    sha256 cellar: :any,                 big_sur:      "af57bac4e787516f93e9b31e7ef573638b88f01785a10ab2f05066889266e224"
+    sha256 cellar: :any,                 catalina:     "06f55da10ce9d015abd0851130f4c3eed344f842d89dcb4cc6ee94be7e2d49ee"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ced908d4623da8ec28ed457f46616838deef5334761690f0e81a0a48a7b77d01"
   end
 
   head do
